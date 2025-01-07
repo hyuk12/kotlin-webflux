@@ -1,0 +1,28 @@
+### 아티클 생성
+POST {{domain}}/article
+Content-Type: application/json
+
+{
+  "title": "title2",
+  "body": "body2"
+}
+
+### 아티클 단건 검색
+GET {{domain}}/article/2
+
+### 아티클 전체 검색
+GET {{domain}}/article/all
+
+### 아티클 전체 검색 (필터)
+GET {{domain}}/article/all?title=matched
+
+### 아티클 수정
+PUT {{domain}}/article/1
+Content-Type: application/json
+
+{
+  "title": "title matched"
+}
+
+### 아티클 삭제
+DELETE {{domain}}/article/1
